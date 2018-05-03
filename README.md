@@ -101,3 +101,21 @@
 
 ![历史记录](https://github.com/JohnBown/shaohelp/blob/master/img/history/history1.png?raw=true)
 
+
+----------------------
+
+## 相关链接
+
+- [JFoenix](http://www.jfoenix.com/)
+- [jfoenixadmin/JFoenix: JFoeniX Material Design Library](https://github.com/jfoenixadmin/JFoenix)
+- [jerady/fontawesomefx - Bitbucket](https://bitbucket.org/Jerady/fontawesomefx)
+- [“捎一下”项目讨论记录——需求及产品拟定条案](https://github.com/JohnBown/Yuanchao-Filed/issues/18)
+- [“捎一下”项目讨论记录——数据库设计](https://github.com/JohnBown/Yuanchao-Filed/issues/19)
+- [“捎一下”项目讨论记录——页面原型图](https://github.com/JohnBown/Yuanchao-Filed/issues/20)
+
+> 
+> **最后鸣谢：**
+> 指导：郑有义老师
+> 团队成员：黄毅鹏（队长）、丘金英、王兴伟、王星杰
+> 开源社区及所有热爱分享的 coder
+>
