@@ -1,0 +1,78 @@
+.root{
+    -fx-background-color: #DDDDDD;
+}
+
+.cardPane{
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+
+.topPane{
+    -fx-background-color: #34A853;
+    -fx-fill: #34A853;
+}
+/*修改汉堡包填充色*/
+.jfx-hamburger StackPane {
+    -fx-background-color: #FBBC05;
+}
+
+/*修改提示信息颜色*/
+.jfx-snackbar-toast{
+    -fx-text-fill: #FF0000;
+}
+
+/*滚动面板及滚动棒样式*/
+.scroll-pane{
+    -fx-background-color: transparent;
+    -fx-border-color: derive(transparent,100%);
+    -fx-padding:0px;
+}
+
+.scroll-pane .scroll-bar:vertical{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+}
+
+.scroll-pane .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius: 2em;
+}
+
+.scroll-pane .scroll-bar:horizontal .decrement-button{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 0 10 0;
+}
+
+.scroll-pane .scroll-bar:vertical .decrement-button{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 2 0 0;
+}
+
+.scroll-pane .scroll-bar .increment-arrow,
+.scroll-pane .scroll-bar .decrement-arrow{
+    -fx-padding: 2;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb{
+    -fx-background-color: derive(#FBBC05,0%);
+    -fx-background-insets: 2,0,0;
+    -fx-background-radius: 1em;
+}
+
+/*TabPane 样式*/
+.tab{
+    -fx-background-color: #FBBC05;
+    -fx-pref-width: 214;
+}
+.tab-header-background{
+    -fx-background-color: #FBBC05;
+}
+
+/*TreeTable 样式*/
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="600.0" stylesheets="@../css/index.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.etc.jump.ui.contro.mymonadsController">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="600.0" styleClass="topPane">
+         <children>
+            <JFXHamburger fx:id="hamburger" layoutX="556.0" layoutY="14.0" />
+            <JFXDrawer fx:id="drawer" prefHeight="300.0" prefWidth="60.0" />
+         </children>
+      </AnchorPane>
+      <JFXTabPane layoutX="80.0" layoutY="31.0" prefHeight="678.0" prefWidth="440.0">
+         <tabs>
+            <Tab text="我的订单">
+               <content>
+                  <JFXTreeTableView fx:id="table1"/>
+               </content>
+            </Tab>
+            <Tab text="我的捎单">
+               <content>
+                  <JFXTreeTableView fx:id="table2"/>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

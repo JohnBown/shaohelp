@@ -1,0 +1,13 @@
+.root{
+    -fx-background-color: #DDDDDD;
+}
+
+.cardPane{
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+
+.topPane{
+    -fx-background-color: #4285F4;
+    -fx-fill: #4285F4;
+}

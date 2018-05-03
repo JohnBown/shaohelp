@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="indexPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="600.0" stylesheets="@../css/index.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.etc.jump.ui.contro.indexController">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="600.0" styleClass="topPane">
+         <children>
+            <JFXHamburger fx:id="hamburger" layoutX="556.0" layoutY="14.0" />
+            <JFXDrawer fx:id="drawer" prefHeight="300.0" prefWidth="60.0" />
+         </children></AnchorPane>
+      <ScrollPane fx:id="scrollPane" hvalue="1.0" layoutX="80.0" layoutY="63.0" prefHeight="678.0" prefWidth="440.0" styleClass="cardPane">
+         <content>
+            <VBox fx:id="vBox" prefWidth="429.0" spacing="5.0" />
+         </content></ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="440.0" prefWidth="700.0" styleClass="root" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.etc.jump.ui.contro.loginController">
+   <children>
+      <AnchorPane prefHeight="155.0" prefWidth="700.0" styleClass="topPane" />
+      <AnchorPane layoutX="163.0" layoutY="83.0" prefHeight="240.0" prefWidth="374.0" styleClass="cardPane">
+         <children>
+            <FontAwesomeIcon fill="#4285f4" iconName="USER" layoutX="159.0" layoutY="68.0" size="6em" />
+            <JFXTextField fx:id="username" focusColor="#4285f4" labelFloat="true" layoutX="90.0" layoutY="78.0" prefHeight="23.0" prefWidth="195.0" promptText="用户名" unFocusColor="#a1a1a1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#4285f4" labelFloat="true" layoutX="90.0" layoutY="122.0" prefHeight="23.0" prefWidth="195.0" promptText="密码" unFocusColor="#a1a1a1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></JFXPasswordField>
+            <FontAwesomeIcon fill="#4285f4" iconName="USER" layoutX="59.0" layoutY="100.0" size="2em" />
+            <FontAwesomeIcon fill="#4285f4" iconName="KEY" layoutX="56.0" layoutY="146.0" size="2em" />
+            <JFXButton fx:id="loginbtn" layoutX="132.0" layoutY="175.0" onAction="#loginbtnClicked" prefHeight="35.0" prefWidth="110.0" styleClass="topPane" text="登录" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIcon fx:id="passworderrer" fill="RED" iconName="ASTERISK" layoutX="293.0" layoutY="141.0" opacity="0.0" />
+            <FontAwesomeIcon fx:id="usernameerreo" fill="#fc0000" iconName="ASTERISK" layoutX="293.0" layoutY="97.0" opacity="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="leftbtn" layoutX="3.0" layoutY="155.0" onMouseClicked="#leftbtnClicked" onMouseEntered="#leftbtnEntered" onMouseExited="#leftbtnExited" prefHeight="92.0" prefWidth="42.0">
+         <children>
+            <FontAwesomeIcon fill="#4285f4" iconName="ANGLE_LEFT" layoutX="8.0" layoutY="71.0" size="6em" />
+         </children>
+         <rotationAxis>
+            <Point3D x="1.0" />
+         </rotationAxis>
+      </AnchorPane>
+      <AnchorPane fx:id="rightbtn" layoutX="652.0" layoutY="157.0" onMouseClicked="#rightbtnClicked" onMouseEntered="#rightbtnEntered" onMouseExited="#rightbtnExited" prefHeight="92.0" prefWidth="42.0">
+         <children>
+            <FontAwesomeIcon fill="#4285f4" iconName="ANGLE_RIGHT" layoutX="8.0" layoutY="71.0" size="6em" />
+         </children>
+         <rotationAxis>
+            <Point3D x="1.0" />
+         </rotationAxis>
+      </AnchorPane>
+   </children>
+</AnchorPane>

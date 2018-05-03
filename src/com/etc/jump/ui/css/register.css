@@ -1,0 +1,19 @@
+.root{
+    -fx-background-color: #DDDDDD;
+}
+
+.cardPane{
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+
+.topPane{
+    -fx-background-color: #EA4335;
+    -fx-fill: #EA4335;
+}
+
+
+.jfx-snackbar-toast{
+    -fx-text-fill: #FF0000;
+}
+

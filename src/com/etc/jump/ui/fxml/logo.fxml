@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="logoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="700.0" stylesheets="@../css/logo.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.etc.jump.ui.contro.logoController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <JFXButton fx:id="btn1" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#JFXBtnClicked" onMouseEntered="#JFXBtn1MouseEntered" onMouseExited="#JFXBtn1MouseExited" opacity="0.0" prefHeight="110.0" prefWidth="700.0" styleClass="Buttom1" text=" ">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_DOWN" size="5em" text="" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn2" buttonType="RAISED" onAction="#JFXBtnClicked" onMouseEntered="#JFXBtn2MouseEntered" onMouseExited="#JFXBtn2MouseExited" opacity="0.0" prefHeight="110.0" prefWidth="700.0" styleClass="Buttom2" text=" " GridPane.rowIndex="1">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" size="5em" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn3" buttonType="RAISED" onAction="#JFXBtnClicked" onMouseEntered="#JFXBtn3MouseEntered" onMouseExited="#JFXBtn3MouseExited" opacity="0.0" prefHeight="110.0" prefWidth="700.0" styleClass="Buttom3" text=" " GridPane.rowIndex="2">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_RIGHT" size="5em" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn4" buttonType="RAISED" onAction="#JFXBtnClicked" onMouseEntered="#JFXBtn4MouseEntered" onMouseExited="#JFXBtn4MouseExited" opacity="0.0" prefHeight="110.0" prefWidth="700.0" styleClass="Buttom4" text=" " GridPane.rowIndex="3">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_UP" size="5em" />
+         </graphic>
+      </JFXButton>
+   </children>
+</GridPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userinfoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="600.0" stylesheets="@../css/index.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.etc.jump.ui.contro.userinfoController">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="600.0" styleClass="topPane">
+         <children>
+            <JFXHamburger fx:id="hamburger" layoutX="556.0" layoutY="14.0" />
+            <JFXDrawer fx:id="drawer" prefHeight="300.0" prefWidth="60.0" />
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="stackPane" layoutX="70.0" layoutY="98.0" prefHeight="545.0" prefWidth="460.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="cardPane">
+               <children>
+                  <FontAwesomeIcon fill="#34a853" iconName="FILE_PICTURE_ALT" layoutX="326.0" layoutY="142.0" size="8em" />
+                  <JFXTextField fx:id="username" focusColor="#fbbc05" labelFloat="true" layoutX="53.0" layoutY="61.0" prefHeight="0.0" prefWidth="235.0" promptText="用户名" unFocusColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <TitledPane fx:id="titlePane" animated="false" expanded="false" layoutX="53.0" layoutY="108.0" prefHeight="110.0" prefWidth="235.0" text="untitled">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="233.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <JFXPasswordField fx:id="pwd" focusColor="#fbbc05" layoutX="-1.0" layoutY="14.0" prefHeight="23.0" prefWidth="235.0" promptText="密码" unFocusColor="#a1a1a1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXPasswordField>
+                              <JFXPasswordField fx:id="pwdagain" focusColor="#fbbc05" layoutX="-1.0" layoutY="53.0" prefHeight="23.0" prefWidth="235.0" promptText="确认密码" unFocusColor="#a1a1a1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXPasswordField>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <JFXButton fx:id="editpwd" layoutX="53.0" layoutY="108.0" onAction="#editpwdButtonClicked" prefHeight="30.0" prefWidth="235.0" styleClass="topPane" text="修改密码" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXComboBox fx:id="comb1" focusColor="#fbbc05" labelFloat="true" layoutX="53.0" layoutY="225.0" prefHeight="23.0" prefWidth="100.0" promptText="所在省" unFocusColor="#a1a1a1" />
+                  <JFXComboBox fx:id="comb2" focusColor="#fbbc05" labelFloat="true" layoutX="159.0" layoutY="225.0" prefHeight="23.0" prefWidth="100.0" promptText="所在市" unFocusColor="#a1a1a1" />
+                  <JFXComboBox fx:id="comb3" focusColor="#fbbc05" labelFloat="true" layoutX="267.0" layoutY="225.0" prefHeight="23.0" prefWidth="100.0" promptText="所在区" unFocusColor="#a1a1a1" />
+                  <JFXTextField fx:id="address" focusColor="#fbbc05" labelFloat="true" layoutX="51.0" layoutY="273.0" prefHeight="23.0" prefWidth="317.0" promptText="详细地址" unFocusColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="school" focusColor="#fbbc05" labelFloat="true" layoutX="51.0" layoutY="329.0" prefHeight="23.0" prefWidth="317.0" promptText="学校" unFocusColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="phonecall" focusColor="#fbbc05" labelFloat="true" layoutX="51.0" layoutY="389.0" prefHeight="23.0" prefWidth="317.0" promptText="手机号" unFocusColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="editbtn" layoutX="317.0" layoutY="467.0" onAction="#editbtnClicked" prefHeight="30.0" prefWidth="82.0" styleClass="topPane" text="编辑" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

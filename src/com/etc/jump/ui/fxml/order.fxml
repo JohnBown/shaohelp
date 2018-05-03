@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="740.0" prefWidth="600.0" stylesheets="@../css/index.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.etc.jump.ui.contro.orderController">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="600.0" styleClass="topPane">
+         <children>
+            <JFXHamburger fx:id="hamburger" layoutX="556.0" layoutY="14.0" />
+            <JFXDrawer fx:id="drawer" prefHeight="300.0" prefWidth="60.0" />
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="stackpane" layoutX="70.0" layoutY="98.0" prefHeight="545.0" prefWidth="460.0" styleClass="cardPane">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <JFXTextField fx:id="goodsinfo" focusColor="#34a853" labelFloat="true" layoutX="36.0" layoutY="64.0" prefHeight="23.0" prefWidth="389.0" promptText="描述物品" unFocusColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="dateat" defaultColor="#34a853" editable="false" layoutX="36.0" layoutY="125.0" prefWidth="120.0" />
+                  <JFXTimePicker fx:id="timeat" defaultColor="#34a853" disable="true" layoutX="156.0" layoutY="125.0" prefWidth="120.0" />
+                  <JFXTextField fx:id="addressfrom" focusColor="#34a853" labelFloat="true" layoutX="36.0" layoutY="169.0" prefHeight="23.0" prefWidth="389.0" promptText="取从" unFocusColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="dateto" defaultColor="#34a853" disable="true" editable="false" layoutX="36.0" layoutY="225.0" prefWidth="120.0" />
+                  <JFXTimePicker fx:id="timefrom" defaultColor="#34a853" disable="true" layoutX="156.0" layoutY="225.0" prefWidth="120.0" />
+                  <JFXTimePicker fx:id="timeto" defaultColor="#34a853" disable="true" layoutX="299.0" layoutY="225.0" prefWidth="120.0" />
+                  <JFXTextField fx:id="addressto" focusColor="#34a853" labelFloat="true" layoutX="36.0" layoutY="273.0" prefHeight="23.0" prefWidth="389.0" promptText="送往" unFocusColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="chkminute" focusColor="#34a853" layoutX="96.0" layoutY="342.0" prefHeight="23.0" unFocusColor="#a1a1a1" />
+                  <JFXButton fx:id="orderbtn" layoutX="341.0" layoutY="444.0" prefHeight="29.0" prefWidth="82.0" styleClass="topPane" text="下单" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXCheckBox fx:id="chk0" checkedColor="#34a853" layoutX="248.0" layoutY="35.0" prefHeight="19.0" prefWidth="60.0" selected="true" text="快递" unCheckedColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="chk1" checkedColor="#34a853" layoutX="308.0" layoutY="35.0" prefHeight="19.0" prefWidth="60.0" text="外卖" unCheckedColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="chk2" checkedColor="#34a853" layoutX="368.0" layoutY="35.0" prefHeight="19.0" prefWidth="60.0" text="其他" unCheckedColor="#a1a1a1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <Label layoutX="278.0" layoutY="227.0" text="至">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="344.0" text="下单后">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="174.0" layoutY="344.0" text="分钟，此单失效。">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="36.0" layoutY="14.0" opacity="0.5" prefHeight="20.0" prefWidth="389.0" />
+                  <Label alignment="CENTER" layoutX="51.0" layoutY="14.0" prefHeight="20.0" prefWidth="30.0" styleClass="cardPane" text="物品" textFill="#a1a1a1" />
+                  <Separator layoutX="36.0" layoutY="105.0" opacity="0.5" prefHeight="20.0" prefWidth="389.0" />
+                  <Label alignment="CENTER" layoutX="51.0" layoutY="105.0" prefHeight="20.0" prefWidth="30.0" styleClass="cardPane" text="取" textFill="#a1a1a1" />
+                  <Separator layoutX="36.0" layoutY="205.0" opacity="0.5" prefHeight="20.0" prefWidth="389.0" />
+                  <Label alignment="CENTER" layoutX="51.0" layoutY="205.0" prefHeight="20.0" prefWidth="30.0" styleClass="cardPane" text="送" textFill="#a1a1a1" />
+                  <Separator layoutX="36.0" layoutY="316.0" opacity="0.5" prefHeight="20.0" prefWidth="389.0" />
+               </children></AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane fx:id="registerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="440.0" prefWidth="700.0" stylesheets="@../css/register.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.etc.jump.ui.contro.registerController">
+   <children>
+      <AnchorPane prefHeight="155.0" prefWidth="700.0" styleClass="topPane" />
+      <AnchorPane fx:id="leftbtn" layoutX="3.0" layoutY="155.0" onMouseClicked="#leftbtnClicked" onMouseEntered="#leftbtnEntered" onMouseExited="#leftbtnExited" prefHeight="92.0" prefWidth="42.0">
+         <children>
+            <FontAwesomeIcon fill="#ea4335" iconName="ANGLE_LEFT" layoutX="8.0" layoutY="71.0" size="6em" />
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="stackPane" layoutX="54.0" layoutY="33.0" prefHeight="341.0" prefWidth="571.0">
+         <children>
+            <AnchorPane prefHeight="341.0" prefWidth="571.0" styleClass="cardPane">
+               <children>
+                  <JFXTextField fx:id="username" focusColor="#ea4335" labelFloat="true" layoutX="40.0" layoutY="33.0" prefHeight="23.0" prefWidth="345.0" promptText="用户名" unFocusColor="#a1a1a1" />
+                  <JFXPasswordField fx:id="password" focusColor="#ea4335" labelFloat="true" layoutX="39.0" layoutY="70.0" prefHeight="23.0" prefWidth="345.0" promptText="密码" unFocusColor="#a1a1a1" />
+                  <JFXPasswordField fx:id="checkpassword" focusColor="#ea4335" labelFloat="true" layoutX="39.0" layoutY="112.0" prefHeight="23.0" prefWidth="345.0" promptText="确认密码" unFocusColor="#a1a1a1" />
+                  <JFXComboBox fx:id="citycomb1" focusColor="#ea4335" labelFloat="true" layoutX="39.0" layoutY="148.0" prefHeight="23.0" prefWidth="111.0" promptText="所在省：" unFocusColor="#a1a1a1" />
+                  <JFXComboBox fx:id="citycomb2" focusColor="#ea4335" labelFloat="true" layoutX="157.0" layoutY="148.0" prefHeight="23.0" prefWidth="111.0" promptText="所在市：" unFocusColor="#a1a1a1" />
+                  <JFXComboBox fx:id="citycomb3" focusColor="#ea4335" layoutX="279.0" layoutY="148.0" prefHeight="23.0" prefWidth="111.0" promptText="所在区：" unFocusColor="#a1a1a1" />
+                  <JFXTextField fx:id="address" focusColor="#ea4335" labelFloat="true" layoutX="39.0" layoutY="189.0" prefHeight="23.0" prefWidth="345.0" promptText="详细地址：区、街道、门牌号" unFocusColor="#a1a1a1" />
+                  <JFXTextField fx:id="school" focusColor="#ea4335" labelFloat="true" layoutX="39.0" layoutY="231.0" prefHeight="23.0" prefWidth="345.0" promptText="学校：" unFocusColor="#a1a1a1" />
+                  <JFXTextField fx:id="phonecall" focusColor="#ea4335" labelFloat="true" layoutX="39.0" layoutY="268.0" prefHeight="23.0" prefWidth="345.0" promptText="手机号" unFocusColor="#a1a1a1" />
+                  <FontAwesomeIcon fill="#ea4335" iconName="FILE_PICTURE_ALT" layoutX="428.0" layoutY="130.0" size="8em" text="" />
+                  <JFXCheckBox fx:id="agreechk" checkedColor="#ea4335" layoutX="428.0" layoutY="224.0" onAction="#agreechkClicked" prefHeight="18.0" prefWidth="82.0" text="同意协议" underline="true" />
+                  <JFXButton fx:id="registerbtn" disable="true" layoutX="428.0" layoutY="268.0" onAction="#registerbtnClicked" prefHeight="34.0" prefWidth="82.0" styleClass="topPane" text="注册" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

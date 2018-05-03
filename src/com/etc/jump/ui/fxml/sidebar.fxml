@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="60.0" spacing="30.0" style="-fx-background-color: #FBBC05;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <FontAwesomeIcon accessibleText="home" fill="WHITE" iconName="HOME" size="3em" />
+      <FontAwesomeIcon accessibleText="order" fill="WHITE" iconName="CLIPBOARD" size="3em" />
+      <FontAwesomeIcon accessibleText="history" fill="WHITE" iconName="HISTORY" size="3em" />
+      <FontAwesomeIcon accessibleText="info" fill="#fffafa" iconName="USER" size="3em" />
+   </children>
+</VBox>
