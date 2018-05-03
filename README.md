@@ -62,7 +62,7 @@
 
 ### 个人信息
 
-![个人信息](https://github.com/JohnBown/shaohelp/blob/master/img/userinfo/userinfo1.png?raw=true)
+![个人信息](https://github.com/JohnBown/shaohelp/blob/master/img/userinfo/userinfo1.jpg?raw=true)
 
 ### 历史记录
 
