@@ -1,7 +1,7 @@
 # “捎一下”桌面应用
 
 ## 软件介绍
-一款帮助学生取快递&外卖的软件平台，你可以在上面发布和接收订单以及修改完善你的个人信息。
+帮助学生取快递&外卖的软件平台，可以在上面发布和接收订单以及修改完善个人信息。
 
 ### 功能介绍
 
@@ -40,3 +40,30 @@
 
 ### 登录
 
+![登录](https://github.com/JohnBown/shaohelp/blob/master/img/login/login1.png?raw=true)
+
+### 注册
+
+![注册](https://github.com/JohnBown/shaohelp/blob/master/img/register/register4.png?raw=true)
+
+### 首页
+
+![首页](https://github.com/JohnBown/shaohelp/blob/master/img/index/index1.png?raw=true)
+
+### 下单
+
+![下单1](https://github.com/JohnBown/shaohelp/blob/master/img/order/order1.png?raw=true)
+
+![下单2](https://github.com/JohnBown/shaohelp/blob/master/img/order/order2.png?raw=true)
+
+![下单3](https://github.com/JohnBown/shaohelp/blob/master/img/order/order3.png?raw=true)
+
+![下单4](https://github.com/JohnBown/shaohelp/blob/master/img/order/order4.png?raw=true)
+
+### 个人信息
+
+![个人信息](https://github.com/JohnBown/shaohelp/blob/master/img/userinfo/userinfo1.png?raw=true)
+
+### 历史记录
+
+![历史记录](https://github.com/JohnBown/shaohelp/blob/master/img/history/history1.png?raw=true)
